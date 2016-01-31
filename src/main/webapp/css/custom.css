@@ -1,0 +1,4 @@
+body {padding-top: 70px;}
+
+.thumbnail .caption {height: 150px; overflow: hidden;}
+.thumbnail img {width: 100%;}

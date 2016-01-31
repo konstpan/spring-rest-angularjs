@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="game in games | filter:query">
+      <div class="thumbnail">
+        <a href="#/games/{{game.id}}"><img ng-src="/img/{{game.id}}.jpg" alt="" /></a>
+        <div class="caption">
+          <a href="#/games/{{game.id}}"><h4>{{game.name}}</h4></a>
+          <p><small>{{game.snippet}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
