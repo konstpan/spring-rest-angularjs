@@ -4,7 +4,7 @@ var gameCatalogControllers = angular.module('gameCatalogControllers', []);
 
 gameCatalogControllers.controller('GameListCtrl', 
   function($scope, $http) {
-    $http.get('games.json').success(function(data) { $scope.games = data; });
+    $http.get('/api/games').success(function(data) { $scope.games = data; });
   }
 );
 
