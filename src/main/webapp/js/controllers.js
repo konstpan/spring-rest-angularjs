@@ -9,7 +9,7 @@ gameCatalogControllers.controller('GameListCtrl',
 );
 
 gameCatalogControllers.controller('GameDetailCtrl', 
-  function($scope, $routeParams) {
-    $scope.gameId = $routeParams.gameId;
+  function($scope, $http, $routeParams) {
+    $http.get('/api/game/' + $routeParams.gameId).success(function(data) { $scope.game = data; });
   }
 );

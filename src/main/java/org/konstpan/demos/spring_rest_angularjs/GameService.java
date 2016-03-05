@@ -55,4 +55,14 @@ public class GameService {
   public List<Game> findAllGames() {
     return games;
   }
+  
+  public Game findGameById(Integer id) {
+    for (Game game : games) {
+      if (game.getId() == id) {
+        return game;
+      }
+    }
+    
+    return null;
+  }
 }
